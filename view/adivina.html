@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/head.html')  %>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <style>
+        #messages {
+            float: left;
+            width: 30%;
+            height: 85%;
+            overflow-y: scroll;
+            background: #f1f1f1;
+            padding: 3px;
+            position: fixed;
+            bottom: 40px;
+            margin-left: 70%;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body style="background-color:#7D8489;">
+    <%- include ('partials/navigation.html')  %>
+    <h2 id="num_ju" style="text-align:center"></h2>
+    <h3 id="tu_turno" style="color:#FF0000; text-align:center;"> Tu turno </h3> 
+   
+    <div id="container" style="float: left"></div>
+    <h1 id="ingrese" style="text-align:center">Ingrese su nickname</h1>
+    <h2 id="ganador">as</h2>
+    
+
+    <ul id="messages"></ul>
+
+    <form id="nom" action="">
+        <input id="nic" autocomplete="off" /><button>Aceptar</button>
+    </form>   
+
+    <form id="formulario" action="">
+        <input id="m" autocomplete="off" /><button>Enviar</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./phaser.js"></script>
+    <script src="./socket.io.js"></script>
+    <script src="./javascript/init.js"></script>
+   
+    
+
+    <script>
+       
+    </script>
+
+</body>
+
+</html>
